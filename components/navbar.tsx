@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Shield, Menu, X } from "lucide-react"
+import { SignedOut, SignedIn, SignInButton, UserButton } from "@clerk/nextjs"
 import { Button } from "@/components/ui/button"
 
 const navLinks = [
@@ -38,12 +39,21 @@ export function Navbar() {
         </div>
 
         <div className="hidden items-center gap-3 md:flex">
-          <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
-            Log in
-          </Button>
-          <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
-            Get Started
-          </Button>
+          <SignedOut>
+            <SignInButton mode="modal">
+              <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
+                Log in
+              </Button>
+            </SignInButton>
+            <SignInButton mode="modal">
+              <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                Get Started
+              </Button>
+            </SignInButton>
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
         </div>
 
         <button
@@ -69,12 +79,23 @@ export function Navbar() {
               </Link>
             ))}
             <div className="flex flex-col gap-2 pt-2">
-              <Button variant="ghost" size="sm" className="w-full justify-start text-muted-foreground">
-                Log in
-              </Button>
-              <Button size="sm" className="w-full bg-primary text-primary-foreground">
-                Get Started
-              </Button>
+              <SignedOut>
+                <SignInButton mode="modal">
+                  <Button variant="ghost" size="sm" className="w-full justify-start text-muted-foreground">
+                    Log in
+                  </Button>
+                </SignInButton>
+                <SignInButton mode="modal">
+                  <Button size="sm" className="w-full bg-primary text-primary-foreground">
+                    Get Started
+                  </Button>
+                </SignInButton>
+              </SignedOut>
+              <SignedIn>
+                <div className="py-2">
+                  <UserButton />
+                </div>
+              </SignedIn>
             </div>
           </div>
         </div>
