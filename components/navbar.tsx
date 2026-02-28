@@ -21,7 +21,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-2">
           <Shield className="size-7 text-primary" />
           <span className="text-lg font-semibold text-foreground tracking-tight">
-            PhishGuard <span className="text-primary">AI</span>
+            Phishy <span className="text-primary">AI</span>
           </span>
         </Link>
 

@@ -32,7 +32,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2">
               <Shield className="size-6 text-primary" />
               <span className="text-base font-semibold text-foreground">
-                PhishGuard <span className="text-primary">AI</span>
+                Phishy <span className="text-primary">AI</span>
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
@@ -63,7 +63,7 @@ export function Footer() {
 
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-border/50 pt-8 sm:flex-row">
           <p className="text-xs text-muted-foreground">
-            2026 PhishGuard AI. All rights reserved.
+            2026 Phishy AI. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground">
             Built with DistilBERT, XGBoost, and FastAPI.

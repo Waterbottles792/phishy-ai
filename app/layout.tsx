@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrains" });
 
 export const metadata: Metadata = {
-  title: 'PhishGuard AI - AI-Powered Phishing Detection',
+  title: 'Phishy AI - AI-Powered Phishing Detection',
   description: 'Detect phishing threats in real-time using hybrid AI models. Scan URLs, emails, and websites with enterprise-grade accuracy. REST API and browser extension available.',
   keywords: ['phishing detection', 'AI security', 'email security', 'URL scanner', 'cybersecurity', 'machine learning'],
   icons: {

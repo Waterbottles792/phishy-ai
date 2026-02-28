@@ -51,7 +51,7 @@ export function FeaturesSection() {
             Three detection vectors. One unified API.
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-pretty text-muted-foreground">
-            PhishGuard AI analyzes threats across URLs, email content, and website 
+            Phishy AI analyzes threats across URLs, email content, and website 
             HTML using a layered hybrid approach for industry-leading accuracy.
           </p>
         </div>
